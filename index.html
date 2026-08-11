@@ -27,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 35px;
+      font-size: 34px;
       margin-bottom: 10px;
     }
 
@@ -43,11 +43,11 @@
 
     .hero {
       background: white;
-      padding: 30px 20px;
-      text-align: center;
+      padding: 25px;
       border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      text-align: center;
       margin-bottom: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
     }
 
     .hero h2 {
@@ -55,50 +55,54 @@
       margin-bottom: 10px;
     }
 
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
     .product {
       background: white;
-      border-radius: 20px;
-      padding: 25px;
+      border-radius: 18px;
+      padding: 22px;
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
     }
 
-    .product-icon {
-      font-size: 70px;
-      margin-bottom: 15px;
+    .icon {
+      font-size: 55px;
+      margin-bottom: 12px;
     }
 
-    .product h2 {
+    .product h3 {
       margin-bottom: 10px;
     }
 
-    .price {
-      color: #6c2cff;
-      font-size: 22px;
-      font-weight: bold;
-      margin: 15px 0;
+    .product p {
+      color: #777;
+      margin-bottom: 18px;
+      font-size: 14px;
     }
 
     .btn {
       display: inline-block;
       background: #6c2cff;
       color: white;
-      padding: 15px 30px;
-      border-radius: 30px;
       text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 30px;
       font-weight: bold;
-      transition: .2s;
     }
 
     .btn:hover {
-      transform: scale(1.05);
       background: #5420cc;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 30px 15px;
       color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -107,46 +111,99 @@
 
   <header>
     <h1>💰 Cuanku</h1>
-    <p>Temukan produk pilihan dengan harga menarik</p>
+    <p>Produk pilihan & promo menarik</p>
   </header>
 
   <main class="container">
 
     <section class="hero">
-      <h2>🔥 Produk Pilihan</h2>
-      <p>Jangan lewatkan produk menarik berikut!</p>
+      <h2>🔥 Rekomendasi Produk</h2>
+      <p>Pilih produk yang kamu inginkan dan cek langsung di Shopee.</p>
     </section>
 
-    <section class="product">
+    <section class="products">
 
-      <div class="product-icon">🛍️</div>
+      <!-- PRODUK 1 -->
+      <div class="product">
+        <div class="icon">🛍️</div>
+        <h3>Produk Pilihan #1</h3>
+        <p>Lihat detail dan harga produk di Shopee.</p>
 
-      <h2>Produk Pilihan Shopee</h2>
-
-      <p>
-        Klik tombol di bawah untuk melihat produk
-        dan melakukan pembelian di Shopee.
-      </p>
-
-      <div class="price">
-        Cek Harga di Shopee
+        <a
+          href="https://id.shp.ee/AVxGr2rS"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn">
+          🛒 Lihat di Shopee
+        </a>
       </div>
 
-      <a
-        href="https://id.shp.ee/njhHMgzc"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn"
-      >
-        🛒 Beli Sekarang
-      </a>
+      <!-- PRODUK 2 -->
+      <div class="product">
+        <div class="icon">🔥</div>
+        <h3>Produk Pilihan #2</h3>
+        <p>Lihat detail dan harga produk di Shopee.</p>
+
+        <a
+          href="https://id.shp.ee/ip3FJT9V"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn">
+          🛒 Lihat di Shopee
+        </a>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="product">
+        <div class="icon">⭐</div>
+        <h3>Produk Pilihan #3</h3>
+        <p>Lihat detail dan harga produk di Shopee.</p>
+
+        <a
+          href="https://id.shp.ee/ybkzohi7?smtt=0.0.9"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn">
+          🛒 Lihat di Shopee
+        </a>
+      </div>
+
+      <!-- PRODUK 4 -->
+      <div class="product">
+        <div class="icon">💎</div>
+        <h3>Produk Pilihan #4</h3>
+        <p>Lihat detail dan harga produk di Shopee.</p>
+
+        <a
+          href="https://id.shp.ee/EZPDiAF3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn">
+          🛒 Lihat di Shopee
+        </a>
+      </div>
+
+      <!-- PRODUK 5 -->
+      <div class="product">
+        <div class="icon">🎁</div>
+        <h3>Produk Pilihan #5</h3>
+        <p>Lihat detail dan harga produk di Shopee.</p>
+
+        <a
+          href="https://id.shp.ee/QWdFpsMi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn">
+          🛒 Lihat di Shopee
+        </a>
+      </div>
 
     </section>
 
   </main>
 
   <footer>
-    © 2026 Cuanku
+    © 2026 Cuanku • Semua produk mengarah ke Shopee
   </footer>
 
 </body>
